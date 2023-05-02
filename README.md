@@ -1,6 +1,6 @@
 # Image Uploader Discord Bot
 
-This Discord bot uploads images reacted to by a specific user to a Google Drive folder. The bot is designed to be resilient, scalable, and production-ready.
+This Discord bot uploads images reacted to by a specific user to a Google Drive folder. The bot is designed to be resilient, scalable, and production-ready. This code creation was assisted by ChatGPT.
 
 ## Table of Contents
 
