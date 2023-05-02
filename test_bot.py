@@ -6,13 +6,15 @@ from unittest.mock import Mock, AsyncMock, patch
 from discord_bot import ImageUploaderBot
 from drive_api import GoogleDrive
 
+from common import CONFIG_FILE
+
 # These tests check if the upload_to_drive method in GoogleDrive and the download_file method in ImageUploaderBot are
 # working as expected. Mock objects and patching are used to isolate the methods being tested from external services
 # and dependencies.
 
 # Read the configuration
 config = configparser.ConfigParser()
-config.read('config.ini')
+config.read(CONFIG_FILE)
 
 discord_token = config.get('Discord', 'Token')
 specific_person_id = int(config.get('Discord', 'SpecificPersonID'))

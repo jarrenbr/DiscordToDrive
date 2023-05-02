@@ -4,6 +4,8 @@ import configparser
 from drive_api import GoogleDrive
 from discord_bot import ImageUploaderBot
 
+from common import CONFIG_FILE
+
 if __name__ == "__main__":
     # Configure logging
     logging.basicConfig(level=logging.INFO,
@@ -11,7 +13,7 @@ if __name__ == "__main__":
 
     # Read configuration
     config = configparser.ConfigParser()
-    config.read('config.ini')
+    config.read(CONFIG_FILE)
 
     discord_token = config.get('Discord', 'Token')
     specific_person_id = int(config.get('Discord', 'SpecificPersonID'))
